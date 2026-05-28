@@ -12,7 +12,7 @@ data "aws_ami" "ubuntu" {
 
   owners = ["099720109477"] # Canonical
 }
-
+#adding comment to test
 resource "aws_instance" "app_server" {
   ami           = data.aws_ami.ubuntu.id
   count         = 2
